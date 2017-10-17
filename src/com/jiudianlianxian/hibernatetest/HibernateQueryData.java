@@ -139,7 +139,7 @@ public class HibernateQueryData {
 			transaction.rollback();
 		} finally {
 			//6.：关闭资源     在使用了与本地线程绑定的session对象之后，就不需要手动关闭session了
-//			session.close();
+			session.close();
 		}
 	}
 
